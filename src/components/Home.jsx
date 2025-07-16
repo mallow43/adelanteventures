@@ -1,25 +1,26 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="home-page py-5 hero-animation">
-      <div className="container h-100">
-        <div className="row h-100 align-items-center justify-content-center py-5">
-          <div className="col-12 col-lg-8 text-center">
-            <div className="py-5 my-5 hero-animation">
-              <h1 className="display-5 fw-semibold mb-4">
-                Adelante Ventures LLC is an investor in US and international fintech disruptors.
-              </h1>
-              <p className="lead text-muted mb-5">
-                Adelante Ventures LLC also invests in venture capital funds.
-              </p>
-              <Link 
-                to="/about" 
-                className="btn btn-primary btn-lg px-4 py-2"
-              >
-                Learn More
-              </Link>
-            </div>
+    <div className="home-page">
+      {/* Floating background shapes */}
+      <div className="floating-shapes">
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+        <div className="floating-shape"></div>
+      </div>
+
+      <div className="container">
+        <div className="home-hero">
+          <h1 className="hero-title">Adelante Ventures LLC</h1>
+          <p className="hero-subtitle">
+            We are investors in US and international fintech disruptors. The
+            firm also invests in venture capital funds.
+          </p>
+          <div className="hero-cta">
+            <Link to="/about" className="btn btn-primary">
+              Learn More
+            </Link>
           </div>
         </div>
       </div>
