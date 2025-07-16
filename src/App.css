@@ -7,6 +7,8 @@
   --clr-dark: #212529;
   --clr-white: #ffffff;
   --clr-muted: #6c757d;
+  --clr-gradient-start: #e6eeff;
+  --clr-gradient-end: #ffffff;
 
   /* Spacing */
   --spacing-1: 0.5rem;
@@ -232,7 +234,11 @@ a:hover {
   display: flex;
   align-items: center;
   padding: var(--spacing-5) 0;
-  background-color: var(--clr-light);
+  background: linear-gradient(
+    130deg,
+    var(--clr-gradient-start),
+    var(--clr-gradient-end)
+  );
 }
 
 /* About Page */
@@ -241,6 +247,11 @@ a:hover {
   min-height: calc(100vh - 76px);
   display: flex;
   align-items: center;
+  background: linear-gradient(
+    130deg,
+    var(--clr-gradient-start),
+    var(--clr-gradient-end)
+  );
 }
 
 .contact-actions {
@@ -253,6 +264,21 @@ a:hover {
 }
 
 /* Animations */
+.hero-animation {
+  animation: fadeSlideUp 0.8s ease-out both;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .fade-enter {
   opacity: 0;
   transform: translateY(20px);
