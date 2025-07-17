@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
       <div className="container">
         <NavLink className="navbar-brand" to="/">
           <svg
@@ -31,7 +31,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-semibold" : "text-muted"}`
+                  `nav-link ${isActive ? "active fw-semibold" : "text-white-50"}`
                 }
                 to="/"
                 end
@@ -42,7 +42,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) =>
-                  `nav-link ${isActive ? "active fw-semibold" : "text-muted"}`
+                  `nav-link ${isActive ? "active fw-semibold" : "text-white-50"}`
                 }
                 to="/about"
               >

@@ -3,12 +3,6 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div className="home-page">
-      {/* Floating background shapes */}
-      <div className="floating-shapes">
-        <div className="floating-shape"></div>
-        <div className="floating-shape"></div>
-        <div className="floating-shape"></div>
-      </div>
 
       <div className="container">
         <div className="home-hero">

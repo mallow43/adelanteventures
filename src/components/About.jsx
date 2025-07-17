@@ -1,12 +1,6 @@
 const About = () => {
   return (
     <div className="about-page">
-      {/* Floating background shapes */}
-      <div className="about-floating-shapes">
-        <div className="about-floating-shape"></div>
-        <div className="about-floating-shape"></div>
-        <div className="about-floating-shape"></div>
-      </div>
 
       <div className="container">
         <div className="about-content">
