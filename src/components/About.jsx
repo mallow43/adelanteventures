@@ -1,15 +1,9 @@
 const About = () => {
   return (
     <div className="about-page">
-      {/* Floating background shapes */}
-      <div className="about-floating-shapes">
-        <div className="about-floating-shape"></div>
-        <div className="about-floating-shape"></div>
-        <div className="about-floating-shape"></div>
-      </div>
 
       <div className="container">
-        <div className="about-content">
+        <div className="about-content bg-white p-4 p-lg-5 rounded shadow">
           <h1 className="about-title">About Us</h1>
 
           <p className="about-description">
@@ -30,7 +24,7 @@ const About = () => {
                   rel="noopener noreferrer"
                   className="btn btn-outline-primary"
                 >
-                  <i className="fab fa-linkedin"></i>
+                  <i className="fab fa-linkedin me-2"></i>
                   <span>LinkedIn</span>
                 </a>
               </div>
@@ -40,7 +34,7 @@ const About = () => {
                   href="mailto:info@adelante.ventures"
                   className="btn btn-outline-primary"
                 >
-                  <i className="fas fa-envelope"></i>
+                  <i className="fas fa-envelope me-2"></i>
                   <span>Email</span>
                 </a>
               </div>
